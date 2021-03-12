@@ -1,0 +1,113 @@
+
+.postAdd {
+    position: relative;
+    margin-top: 5%;
+    margin-left: 10%;
+    padding: 5%;
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid rgb(206, 206, 206);
+    border-radius: 15px;
+}
+.postAdd > *{
+    position: relative;
+}
+input{
+
+    font-size: 1.3rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    background-color: white;
+    box-shadow: 0px 0px 2px 1px rgb(218, 218, 218);
+    width: 100%;
+    border: none;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus{
+    box-shadow: 0px 0px 5px 2px rgb(218, 218, 218);
+}
+.postAdd > textarea{
+    width: 100%;
+    height: 25vh;
+    margin-top: 2rem;
+    resize: vertical;
+    overflow-y: auto;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    font-size: 1.3rem;
+    outline: none;
+
+    box-shadow: 0px 0px 2px 1px rgb(218, 218, 218) inset;
+    
+}
+
+button{
+    display: flex;
+    align-content: center;
+    text-align: center;
+    background-color: rgb(41, 41, 41);
+    margin-top: 2rem;
+    border: none;
+    color: white;
+    font-size: 1.3em;
+    padding: 0.5rem 1rem;
+    transition: 0.3s;
+
+}
+button:hover{
+    background-color: rgb(106, 253, 234);
+    color: black;
+    cursor: pointer;
+}
+
+
+
+/* IMAGE */
+/* HEADER SECTION */
+.make-img{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin: 3rem 0rem;
+    border: 1px solid rgba(0, 0, 0, 0.137);
+    overflow: hidden;
+    border-radius: 15px;
+    height: 20vh;
+    width: 40vw;
+    
+}
+.make-img img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    max-height: 100%;
+}
+
+.make-img *{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input[type='button']{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-color: rgba(255, 255, 255, 0.666);
+    background-size: 120px 120px;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    transition: 0.3s;
+    z-index: 10;
+    cursor: pointer;
+    border: none;
+}
+input[type='button']:hover{
+    opacity: 1;
+}
